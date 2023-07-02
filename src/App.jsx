@@ -1,11 +1,11 @@
-import { Header } from "./Components";
+import { Nav } from "./Components";
 import { GlobalStyled } from "./GlobalStyled";
 
 function App() {
   return (
     <>
       <GlobalStyled />
-      <Header />
+      <Nav />
     </>
   );
 }

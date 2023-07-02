@@ -46,7 +46,7 @@ const StyledDiv = styled.div`
   gap: 20px;
 `;
 
-export const Header = () => {
+export const Nav = () => {
   return (
     <StyledContent>
       <StyledDiv>
