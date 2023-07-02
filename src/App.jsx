@@ -1,9 +1,11 @@
-import "./App.css";
+import { Header } from "./Components";
+import { GlobalStyled } from "./GlobalStyled";
 
 function App() {
   return (
     <>
-      <h1>hola</h1>
+      <GlobalStyled />
+      <Header />
     </>
   );
 }
