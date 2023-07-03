@@ -1,7 +1,10 @@
-import { Card, Nav } from "./Components";
+import { Nav } from "./Components";
 import { GlobalStyled } from "./GlobalStyled";
-import axios from "axios";
 import { useEffect, useState } from "react";
+import axios from "axios";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./Pages";
 function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -20,10 +23,15 @@ function App() {
 
   return (
     <>
-      <Card data={data} />
-      <GlobalStyled />
-
-      <Nav />
+      <Router>
+        <Nav />
+        <GlobalStyled />
+        <Routes>
+          <Route path="/" element={<Home data={data} />} />
+          {/* <Route path="/sobre" element={<Sobre />} />
+        <Route path="/*" element={<Page404 />} /> */}
+        </Routes>
+      </Router>
     </>
   );
 }

@@ -1,7 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyled = createGlobalStyle`
-body { background: #10141E;}
+body { 
+  background: #10141E;
+}
 * {
   box-sizing: border-box;
   margin: 0;
