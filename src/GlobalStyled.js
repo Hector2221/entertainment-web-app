@@ -7,7 +7,7 @@ body { background: #10141E;}
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 html {

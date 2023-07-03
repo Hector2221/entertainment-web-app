@@ -23,7 +23,7 @@ const StyledContent = styled.div`
 const StyledLogo = styled.img`
   width: 32px;
   height: 25.6px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 `;
 const StyledNav = styled.img`
   width: 24px;
@@ -43,7 +43,7 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 35px;
 `;
 
 export const Nav = () => {
