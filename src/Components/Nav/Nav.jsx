@@ -9,15 +9,16 @@ import Avatar from "../../assets/image-avatar.png";
 
 const StyledContent = styled.div`
   width: 96px;
-  height: 90vh;
+  height: 94vh;
   background: #161d2f;
-  margin: 30px;
+  margin: 20px 15px;
   padding: 35px 0px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 `;
 const StyledLogo = styled.img`
   width: 32px;

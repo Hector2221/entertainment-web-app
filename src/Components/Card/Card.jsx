@@ -70,6 +70,9 @@ const CardImg = styled.img`
   height: 174px;
   border-radius: 8px;
   position: relative;
+  &:hover {
+    filter: brightness(50%);
+  }
   &:hover + ${ContPlay} {
     visibility: visible;
   }
