@@ -29,20 +29,6 @@ const ContCardTrending = styled.div`
   display: flex;
   column-gap: 40px;
   overflow-x: auto;
-  /* Estilos del scrollbar vertical */
-  ::-webkit-scrollbar {
-    width: 8px; /* Ancho del scrollbar */
-    background-color: #f5f5f5; /* Color del fondo del scrollbar */
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color del thumb */
-    border-radius: 4px; /* Radio de borde del thumb */
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Color del thumb al hacer hover */
-  }
 `;
 
 // eslint-disable-next-line react/prop-types

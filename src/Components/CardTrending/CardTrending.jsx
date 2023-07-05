@@ -52,11 +52,11 @@ export const CardTrending = ({ data }) => {
   return (
     <>
       {data.map((item, index) => (
-        <Card key={item.index}>
+        <Card key={index}>
           <CardImg src={item.thumbnail.trending.large} />
           <CardBack />
           <ContPlay>
-            <ImgPlay src={Play} atl={Play} />
+            <ImgPlay src={Play} />
             <FontPlay>Play</FontPlay>
           </ContPlay>
         </Card>

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 
 import Logo from "../../assets/logo.svg";
 import Home from "../../assets/icon-nav-home.svg";
@@ -50,13 +51,23 @@ export const Nav = () => {
   return (
     <StyledContent>
       <StyledDiv>
-        <StyledLogo src={Logo} alt="Logo" />
+        <Link to="/">
+          <StyledLogo src={Logo} alt="Logo" />
+        </Link>
 
         <StyledDiv>
-          <StyledNav src={Home} alt="Home" />
-          <StyledNav src={Movies} alt="Movies" />
-          <StyledNav src={Tv} alt="Tv" />
-          <StyledNav src={Bookmark} alt="Bookmark" />
+          <Link to="/">
+            <StyledNav src={Home} alt="Home" />
+          </Link>
+          <Link to="/Movies">
+            <StyledNav src={Movies} alt="Movies" />
+          </Link>
+          <Link to="/Tv">
+            <StyledNav src={Tv} alt="Tv" />
+          </Link>
+          <Link to="/Bookmark">
+            <StyledNav src={Bookmark} alt="Bookmark" />
+          </Link>
         </StyledDiv>
       </StyledDiv>
 

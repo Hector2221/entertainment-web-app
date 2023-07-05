@@ -1,7 +1,7 @@
 import { Nav } from "./Components";
 import { GlobalStyled } from "./GlobalStyled";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./Pages";
+import { Home, Movies, Page404 } from "./Pages";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -11,6 +11,7 @@ const Container = styled.div`
   display: flex;
   max-width: 1380px;
 `;
+
 function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -34,8 +35,8 @@ function App() {
         <GlobalStyled />
         <Routes>
           <Route path="/" element={<Home data={data} />} />
-          {/* <Route path="/sobre" element={<Sobre />} />
-        <Route path="/*" element={<Page404 />} /> */}
+          <Route path="/Movies" element={<Movies data={data} />} />
+          <Route path="/*" element={<Page404 />} />
         </Routes>
       </Router>
     </Container>

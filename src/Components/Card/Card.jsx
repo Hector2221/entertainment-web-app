@@ -97,7 +97,7 @@ export const Card = ({ data }) => {
     <StyledCard key={index}>
       <CardImg src={item.thumbnail.regular.medium} />
       <ContPlay>
-        <ImgPlay src={Play} atl={Play} />
+        <ImgPlay src={Play} />
         <FontPlay>Play</FontPlay>
       </ContPlay>
       <ContentMark>
