@@ -11,7 +11,7 @@ const ContHome = styled.div`
 const ContCard = styled.div`
   display: flex;
   flex-wrap: wrap;
-  column-gap: 40px;
+  column-gap: 24px;
   row-gap: 32px;
 `;
 const TxtHome = styled.h2`
