@@ -4,7 +4,7 @@ import ErrorPague from "../../assets/ErrorPague404.svg";
 const ContErr = styled.div`
   display: flex;
   height: 100vh;
-  width: 250vh;
+  width: 100%;
   justify-content: center;
   align-items: center;
 `;
