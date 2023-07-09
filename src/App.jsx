@@ -6,6 +6,7 @@ import { Home, Movies, Page404 } from "./Pages";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
+import { TvSeries } from "./Pages/TvSeries/TvSeries";
 
 const Container = styled.div`
   display: flex;
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home data={data} />} />
           <Route path="/Movies" element={<Movies data={data} />} />
+          <Route path="/Tv" element={<TvSeries data={data} />} />
           <Route path="/*" element={<Page404 />} />
         </Routes>
       </Router>

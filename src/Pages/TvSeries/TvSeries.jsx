@@ -15,10 +15,11 @@ const ContCard = styled.div`
   column-gap: 24px;
   row-gap: 32px;
 `;
+
 // eslint-disable-next-line react/prop-types
-export const Movies = ({ data }) => {
+export const TvSeries = ({ data }) => {
   // eslint-disable-next-line react/prop-types
-  const FilData = data.filter((item) => item.category === "Movie");
+  const FilData = data.filter((item) => item.category === "TV Series");
   return (
     <ConstMovie>
       <ContCard>

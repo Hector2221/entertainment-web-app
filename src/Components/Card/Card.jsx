@@ -108,7 +108,7 @@ export const Card = ({ data }) => {
         <Details>{item.category}</Details>
         <Details>{item.rating}</Details>
       </DivDetails>
-      <Title>The Great Lands</Title>
+      <Title>{item.title}</Title>
     </StyledCard>
   ));
 };
