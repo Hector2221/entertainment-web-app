@@ -16,13 +16,13 @@ const ContCard = styled.div`
   row-gap: 32px;
 `;
 // eslint-disable-next-line react/prop-types
-export const Movies = ({ data }) => {
+export const Movies = ({ data, register }) => {
   // eslint-disable-next-line react/prop-types
   const FilData = data.filter((item) => item.category === "Movie");
   return (
     <ConstMovie>
       <ContCard>
-        <Card data={FilData} />
+        <Card data={FilData} register={register} />
       </ContCard>
     </ConstMovie>
   );

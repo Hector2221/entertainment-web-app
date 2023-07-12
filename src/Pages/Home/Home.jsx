@@ -32,7 +32,7 @@ const ContCardTrending = styled.div`
 `;
 
 // eslint-disable-next-line react/prop-types
-export const Home = ({ data }) => {
+export const Home = ({ data, register }) => {
   // eslint-disable-next-line react/prop-types
   const FilData = data.filter((item) => item.isTrending === false);
   // eslint-disable-next-line react/prop-types
@@ -47,7 +47,7 @@ export const Home = ({ data }) => {
 
       <TxtHome>Recommended for you</TxtHome>
       <ContCard>
-        <Card data={FilData} />
+        <Card data={FilData} register={register} />
       </ContCard>
     </ContHome>
   );

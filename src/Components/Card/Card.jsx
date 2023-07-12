@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 import Bookmark from "../../assets/icon-bookmark-empty.svg";
 import Play from "../../assets/icon-play.svg";
-import { useState } from "react";
 const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -92,11 +91,9 @@ const ImgPlay = styled.img`
   height: 30px;
 `;
 
-export const Card = ({ data }) => {
-  const [Marked, setMarked] = useState([]);
+export const Card = ({ data, register }) => {
   const handleBookmarkClick = (item) => {
-    setMarked((prevMarked) => [...prevMarked, item]);
-    console.log(Marked);
+    register(item);
   };
 
   return data.map((item, index) => (
