@@ -19,11 +19,15 @@ function App() {
 
   //Register Bookmarked
   const handleRegister = (value) => {
+    // Verificar si el elemento ya existe en el arreglo
+    if (Marked.includes(value)) {
+      // El elemento ya existe, no se agrega nuevamente
+      return;
+    }
+    // Agregar el elemento al arreglo
     setMarked([...Marked, value]);
   };
-  useEffect(() => {
-    console.log(Marked);
-  }, [Marked]);
+
   //Api
   useEffect(() => {
     const fetchItems = async () => {
